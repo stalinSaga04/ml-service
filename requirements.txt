@@ -1,12 +1,11 @@
-
 # Core web framework
 fastapi==0.115.4
 uvicorn==0.29.0
 python-multipart==0.0.9
 starlette==0.37.2
 
-# ML/AI stack (lightweight + Render-compatible)
-tensorflow-cpu==2.14.0
+# ML/AI stack (Render-compatible)
+tensorflow-cpu==2.15.0
 deepface==0.0.93
 opencv-python-headless==4.9.0.80
 pandas==2.2.2
