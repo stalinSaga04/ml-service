@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: ml-service
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn -w 2 -k uvicorn.workers.UvicornWorker ml_service:app"
+    pythonVersion: 3.10.13
