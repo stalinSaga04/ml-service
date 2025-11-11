@@ -4,6 +4,10 @@ import tempfile, os, json
 
 app = FastAPI()
 
+@app.get("/")
+def root():
+    return {"message": "ML service is running successfully 🚀"}
+
 @app.post("/analyze")
 async def analyze_video(file: UploadFile = File(...)):
     with tempfile.NamedTemporaryFile(delete=False, suffix=".mp4") as tmp:
