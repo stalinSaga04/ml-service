@@ -1,21 +1,6 @@
-# Core web framework
 fastapi==0.115.4
 uvicorn==0.29.0
 python-multipart==0.0.9
 starlette==0.41.2
-
-# ML/AI stack (Render-compatible)
-tensorflow==2.15.0
-deepface==0.0.93
-opencv-python-headless==4.9.0.80
-pandas==2.2.2
-numpy==1.26.4
-pillow==10.3.0
-
-# Supporting libs
-tqdm==4.66.2
-requests==2.31.0
-typing-extensions==4.9.0
-scenedetect==0.6.2
-rich==13.7.0
 pydantic==2.7.1
+gunicorn==21.2.0
