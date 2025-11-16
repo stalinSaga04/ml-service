@@ -15,4 +15,4 @@ RUN pip install -r requirements.txt
 EXPOSE 8000
 
 # Start the app with Gunicorn + Uvicorn
-CMD ["gunicorn", "-w", "2", "-k", "uvicorn.workers.UvicornWorker", "ml_service:app"]
+CMD ["gunicorn", "-w", "1", "-k", "uvicorn.workers.UvicornWorker", "ml_service:app"]
